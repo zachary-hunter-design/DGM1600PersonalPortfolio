@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Shippori Mincho', serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3D3966;
+    z-index: 10;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist a {
+    display: block;
+    font-size: 1.5em;
+    padding: 1em .5em;
+    color: #FFFADB;
+}
+
+.navlist a:hover {
+    background-color: #8B88B3;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B2AC88;
+    width: 100%;
+    height: 100vh;
+}
+
+#welcome-section > h1 {
+    color: #666143;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#welcome-section > p {
+    color: #8B88B3;
+    font-size: 1.5em;
+}
+
+#projects {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-content: center;
+background-color: #FFFADB;
+height: 100vh;
+}
+
+.project-tile {
+    margin: 1em;
+}
+
+figcaption {
+    text-align: center;
+    color: #FFFADB;
+    background-color: #666143;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    position: relative;
+    top:-10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project-tile:hover {
+    color: red;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    color:#666143;
+    background-color: #B2AC88;
+}
+
+#contact-text {
+    color: #666143;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-text > h2 {
+    color: #666143;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.contact-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-links a {
+    margin: 1em;
+    color: #8B88B3;
+}
+
+footer {
+    background-color: #3D3966;
+    color:#8B88B3;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size:100%;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 460px) {
+    html {
+        font-size: 50%;
+    }
+}
