@@ -2,8 +2,19 @@ import { films } from '../data/films.js'
 
 const greeting = "Hello World"
 
-console.log(films[1])
+let filmList = document.querySelector("#filmlist")
 
-let filmOne = document.querySelector("#film1")
+for (let i = 0; i < films.length; i++) {
 
-filmOne.textContent = films[0].title
+    //let lastNum = getLastNumber(films[i].url)
+    const foundFilm = films.find(film => getLastNumber(film.url) === (i + 1).toString())
+    let filmItem = document.createElement('li')
+    filmItem.textContent = films[i].title
+    filmList.appendChild(filmItem)
+}
+
+function getLastNumber(url) {
+    let end = url.lastIndexOf('/')
+    return url.charAt(end - 1)
+    console.log(`filmNum is ${url.charAt(filmNum)}`)
+}
