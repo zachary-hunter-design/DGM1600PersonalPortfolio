@@ -2,8 +2,13 @@
 margin: 0;
 }
 
-#filmList {
+body {
+    background-color: black;
+}
+
+#filmlist {
     display: flex;
+    flex-wrap: wrap;
 }
 
 figure {
